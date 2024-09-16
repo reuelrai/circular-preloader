@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Circular Preloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="progress-container">
+            <svg class="progress-circle" width="300" height="300"> <!-- Increased size -->
+                <circle class="progress-background" cx="150" cy="150" r="120"></circle> <!-- Increased radius -->
+                <circle class="progress-bar" cx="150" cy="150" r="120"></circle> <!-- Increased radius -->
+            </svg>
+            <div class="progress-value" id="progressValue"></div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="cat.gif" alt="logo" class="logo"> <!-- Logo above the button -->
+        <button type="submit" >START</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
